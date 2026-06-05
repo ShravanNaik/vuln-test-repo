@@ -1,17 +1,17 @@
-  {
-    "name": "vuln-test-repo",
-    "version": "1.0.0",
-    "description": "Test repo for vulnerability auto-fix pipeline",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"No tests configured\" && exit 0"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "lodash": "4.17.4",
-      "axios": "0.21.1",
-      "minimist": "1.2.5"
-    }
+{
+  "name": "vuln-test-repo",
+  "version": "1.0.0",
+  "description": "Test repo for vulnerability auto-fix pipeline",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"No tests configured\" && exit 0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "4.17.4",
+    "axios": "0.21.1",
+    "minimist": "1.2.6"
   }
+}
