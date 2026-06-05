@@ -1,17 +1,1 @@
-  {
-    "name": "vuln-test-repo",
-    "version": "1.0.0",
-    "description": "Test repo for vulnerability auto-fix pipeline",
-    "main": "index.js",
-    "scripts": {
-      "test": "echo \"No tests configured\" && exit 0"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "lodash": "4.17.4",
-      "axios": "0.21.1",
-      "minimist": "1.2.5"
-    }
-  }
+ewogICAgIm5hbWUiOiAidnVsbi10ZXN0LXJlcG8iLAogICAgInZlcnNpb24iOiAiMS4wLjAiLAogICAgImRlc2NyaXB0aW9uIjogIlRlc3QgcmVwbyBmb3IgdnVsbmVyYWJpbGl0eSBhdXRvLWZpeCBwaXBlbGluZSIsCiAgICAibWFpbiI6ICJpbmRleC5qcyIsCiAgICAic2NyaXB0cyI6IHsKICAgICAgInRlc3QiOiAiZWNobyAiTm8gdGVzdHMgY29uZmlndXJlZCIgJiYgZXhpdCAwIgogICAgfSwKICAgICJrZXl3b3JkcyI6IFtdLAogICAgImF1dGhvciI6ICIiLAogICAgImxpY2Vuc2UiOiAiSVNDIiwKICAgICJkZXBlbmRlbmNpZXMiOiB7CiAgICAgICJsb2Rhc2giOiAiNC4xNy40IiwKICAgICAgImF4aW9zIjogIjAuMjEuMSIsCiAgICAgICJtaW5pbWlzdCI6ICIxLjIuNiIKICAgIH0KICB9Cg==
