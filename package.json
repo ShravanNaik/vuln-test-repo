@@ -4,7 +4,7 @@
   "description": "Test repo for vulnerability auto-fix pipeline",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No tests configured\" && exit 0"
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
@@ -13,5 +13,8 @@
     "lodash": "4.17.4",
     "axios": "0.21.1",
     "minimist": "1.2.6"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
   }
 }
