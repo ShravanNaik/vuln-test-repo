@@ -43,7 +43,7 @@
         <dependency>
             <groupId>org.apache.maven</groupId>
             <artifactId>maven-core</artifactId>
-            <version>3.8.1</version>
+            <version>3.9.16</version>
         </dependency>
 
         <!-- CVE-2022-42003 / CVE-2022-42004 — Jackson Databind (HIGH) -->
