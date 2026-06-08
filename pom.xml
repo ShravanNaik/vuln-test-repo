@@ -25,27 +25,6 @@
 
     <dependencies>
 
-        <!-- CVE-2021-44228 / CVE-2021-45046 — Log4Shell (CRITICAL) -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>2.14.1</version>
-        </dependency>
-
-        <!-- CVE-2022-22965 — Spring4Shell RCE (CRITICAL) -->
-        <dependency>
-            <groupId>org.springframework</groupId>
-            <artifactId>spring-webmvc</artifactId>
-            <version>5.3.17</version>
-        </dependency>
-
-        <!-- CVE-2021-26291 — Maven dependency confusion (HIGH) -->
-        <dependency>
-            <groupId>org.apache.maven</groupId>
-            <artifactId>maven-core</artifactId>
-            <version>3.8.1</version>
-        </dependency>
-
         <!-- CVE-2022-42003 / CVE-2022-42004 — Jackson Databind (HIGH) -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
@@ -53,14 +32,7 @@
             <version>2.13.2.1</version>
         </dependency>
 
-        <!-- CVE-2022-22976 — Spring Security (MEDIUM) -->
-        <dependency>
-            <groupId>org.springframework.security</groupId>
-            <artifactId>spring-security-core</artifactId>
-            <version>5.6.1</version>
-        </dependency>
-
-        <!-- CVE-2020-36518 — Jackson Databind DoS (MEDIUM) -->
+        <!-- CVE-2020-36518 — Jackson DoS (MEDIUM) — must stay in sync with jackson-databind -->
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-annotations</artifactId>
@@ -74,18 +46,18 @@
             <version>1.9.3</version>
         </dependency>
 
-        <!-- CVE-2021-29425 — Commons IO path traversal (MEDIUM) -->
+        <!-- CVE-2021-44228 / CVE-2021-45046 — Log4Shell (CRITICAL) -->
         <dependency>
-            <groupId>commons-io</groupId>
-            <artifactId>commons-io</artifactId>
-            <version>2.6</version>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.14.1</version>
         </dependency>
 
-        <!-- CVE-2022-25647 — Gson deserialization (MEDIUM) -->
+        <!-- CVE-2022-22965 — Spring4Shell RCE (CRITICAL) -->
         <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-            <version>2.8.8</version>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-webmvc</artifactId>
+            <version>5.3.17</version>
         </dependency>
 
         <!-- Safe: test scope only -->
