@@ -80,7 +80,7 @@
         <dependency>
             <groupId>commons-collections</groupId>
             <artifactId>commons-collections</artifactId>
-            <version>3.2.1</version>
+            <version>3.2.2</version>
         </dependency>
 
         <!-- CVE-2019-10086 — Commons BeanUtils (HIGH) | fix: 1.9.4 (patch — LOW) kept for comparison -->
