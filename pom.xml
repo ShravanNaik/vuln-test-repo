@@ -43,7 +43,7 @@
         <dependency>
             <groupId>commons-beanutils</groupId>
             <artifactId>commons-beanutils</artifactId>
-            <version>1.9.3</version>
+            <version>1.11.0</version>
         </dependency>
 
         <!-- CVE-2021-44228 / CVE-2021-45046 — Log4Shell (CRITICAL) -->
