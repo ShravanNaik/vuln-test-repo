@@ -1,4 +1,4 @@
- {
+{
     "name": "vuln-test-repo",
     "version": "1.0.0",
     "description": "Test repo for vulnerability auto-fix pipeline",
