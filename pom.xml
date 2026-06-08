@@ -32,7 +32,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>unknown</version>
+            <version>5.2.20.RELEASE</version>
         </dependency>
 
         <!-- CVE-2021-44228 — Log4Shell (CRITICAL) | fix: 2.17.1 (minor) -->
