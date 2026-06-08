@@ -28,11 +28,11 @@
         <!-- ==================== LOW COMPATIBILITY ==================== -->
         <!-- Patch bump only — safe to merge, no API changes             -->
 
-        <!-- CVE-2022-22965 — Spring4Shell RCE (CRITICAL) | fix: 5.3.18 (patch) -->
+        <!-- CVE-2022-22965 — Spring4Shell RCE (CRITICAL) | fix: 5.3.26 (patch) -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>5.3.18</version>
+            <version>5.3.26</version>
         </dependency>
 
         <!-- CVE-2021-44228 — Log4Shell (CRITICAL) | fix: 2.17.1 (minor) -->
