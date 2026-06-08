@@ -4,3 +4,7 @@
       directory: "/"
       schedule:
         interval: "daily"
+      open-pull-requests-limit: 100
+      labels:
+        - "security"
+        - "automated"
