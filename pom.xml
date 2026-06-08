@@ -25,39 +25,69 @@
 
     <dependencies>
 
-        <!-- CVE-2022-42003 / CVE-2022-42004 — Jackson Databind (HIGH) -->
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-databind</artifactId>
-            <version>2.13.4.2</version>
-        </dependency>
+        <!-- ==================== LOW COMPATIBILITY ==================== -->
+        <!-- Patch bump only — safe to merge, no API changes             -->
 
-        <!-- CVE-2020-36518 — Jackson DoS (MEDIUM) — must stay in sync with jackson-databind -->
-        <dependency>
-            <groupId>com.fasterxml.jackson.core</groupId>
-            <artifactId>jackson-annotations</artifactId>
-            <version>2.12.0</version>
-        </dependency>
-
-        <!-- CVE-2019-10086 — Commons BeanUtils (HIGH) -->
-        <dependency>
-            <groupId>commons-beanutils</groupId>
-            <artifactId>commons-beanutils</artifactId>
-            <version>1.11.0</version>
-        </dependency>
-
-        <!-- CVE-2021-44228 / CVE-2021-45046 — Log4Shell (CRITICAL) -->
-        <dependency>
-            <groupId>org.apache.logging.log4j</groupId>
-            <artifactId>log4j-core</artifactId>
-            <version>2.17.0</version>
-        </dependency>
-
-        <!-- CVE-2022-22965 — Spring4Shell RCE (CRITICAL) -->
+        <!-- CVE-2022-22965 — Spring4Shell RCE (CRITICAL) | fix: 5.3.18 (patch) -->
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-webmvc</artifactId>
-            <version>5.3.26</version>
+            <version>5.3.17</version>
+        </dependency>
+
+        <!-- CVE-2021-44228 — Log4Shell (CRITICAL) | fix: 2.17.1 (minor) -->
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.14.1</version>
+        </dependency>
+
+        <!-- ==================== MEDIUM COMPATIBILITY ==================== -->
+        <!-- Minor version jump — deprecations and some API shifts          -->
+
+        <!-- CVE-2022-25857 — SnakeYAML DoS (CRITICAL) | fix: 1.33 (skips several minors with changes) -->
+        <dependency>
+            <groupId>org.yaml</groupId>
+            <artifactId>snakeyaml</artifactId>
+            <version>1.30</version>
+        </dependency>
+
+        <!-- CVE-2022-42003 — Jackson Databind (HIGH) | fix: 2.14.x (multiple minor jumps, deprecations) -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.9.10</version>
+        </dependency>
+
+        <!-- must stay in sync with jackson-databind -->
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-annotations</artifactId>
+            <version>2.9.0</version>
+        </dependency>
+
+        <!-- ==================== HIGH COMPATIBILITY ==================== -->
+        <!-- Major version bump required — breaking API changes            -->
+
+        <!-- CVE-2018-10237 — Guava DoS (MEDIUM) | fix: 32.x (was 20.x — 12 major versions, many removed APIs) -->
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>20.0</version>
+        </dependency>
+
+        <!-- CVE-2015-6420 — Commons Collections RCE (CRITICAL) | fix requires 4.x — different artifact, breaking changes -->
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>3.2.1</version>
+        </dependency>
+
+        <!-- CVE-2019-10086 — Commons BeanUtils (HIGH) | fix: 1.9.4 (patch — LOW) kept for comparison -->
+        <dependency>
+            <groupId>commons-beanutils</groupId>
+            <artifactId>commons-beanutils</artifactId>
+            <version>1.9.3</version>
         </dependency>
 
         <!-- Safe: test scope only -->
