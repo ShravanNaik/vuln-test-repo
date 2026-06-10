@@ -57,7 +57,7 @@
         <dependency>
             <groupId>org.springframework.security</groupId>
             <artifactId>spring-security-core</artifactId>
-            <version>5.6.1</version>
+            <version>7.1.0</version>
         </dependency>
 
         <!-- CVE-2020-36518 — Jackson Databind DoS (MEDIUM) -->
